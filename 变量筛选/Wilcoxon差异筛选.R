@@ -6,7 +6,7 @@ wilcoxon_feature_selection <- function(dataframe,group,features){
     temp_results <- wilcox.test(temp[,i][which(temp[,group]==a$Var1[1])],temp[,i][which(temp[,group]==a$Var1[2])])
     temp_results <- data.frame(Features=colnames(temp[i]),Group=group,P_value=temp_results$p.value)
     if(median(temp[,i][which(temp[,group]==a$Var1[1])],na.rm = T)>=median(temp[,i][which(temp[,group]==a$Var1[2])],na.rm = T)){
-      temp_results$Relation <- paste("High in ",a$Var1[1],sep = "")
+      temp_results$Relation <- paste("High in group",a$Var1[1],sep = "")
     }else if(median(temp[,i][which(temp[,group]==a$Var1[1])],na.rm = T)<median(temp[,i][which(temp[,group]==a$Var1[2])],na.rm = T)){
       temp_results$Relation <- paste("High in group",a$Var1[2],sep = "")
     }
