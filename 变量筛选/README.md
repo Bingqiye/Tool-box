@@ -58,5 +58,5 @@ Species_list <- c("Species1","Species2"......)
 Species_was_pathway <- spearman_feature_selection(harmonized,"HBA1C",Species_list)
 ```
 ### Output
-![Image text](https://github.com/Bingqiye/Tool-box/blob/main/Screenshots/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230710152507.png)
+![Image text](https://github.com/Bingqiye/Tool-box/blob/main/Screenshots/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230723112730.png)
 
