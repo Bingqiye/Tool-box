@@ -1,6 +1,6 @@
 # Contents  
 - [广义线性模型变量筛选](#广义线性模型变量筛选)  
-- [Principal Investigator](#principal-investigator)  
+- [斯皮尔曼相关性筛选](#斯皮尔曼相关性筛选)  
 - [Contributors](#contributors)  
 - [Release History](#release-history)
 
