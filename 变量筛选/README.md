@@ -111,7 +111,7 @@ source("Wilcoxon差异筛选.R")
 
 Species_list <- c("Species1","Species2"......)
 
-Diabetes_was_metabolites <- wilcoxon_feature_selection(harmonized,"Diabetes",Species_list)
+mediation_summary <- mediation_feature_selection(harmonized,exposure = colnames(harmonized)[18:20],mediator = colnames(harmonized)[9:11],outcome = "BMI",cov = c("None"))
 ```
 ### Output
 ![Image text](https://github.com/Bingqiye/Tool-box/blob/main/Screenshots/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230723154149.png)
