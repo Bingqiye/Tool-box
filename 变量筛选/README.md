@@ -1,8 +1,7 @@
 # Contents  
 - [广义线性模型变量筛选](#广义线性模型变量筛选)  
 - [斯皮尔曼相关性筛选](#斯皮尔曼相关性筛选)  
-- [Contributors](#contributors)  
-- [Release History](#release-history)
+- [Wilcoxon差异筛选](#wilcoxon差异筛选) 
 
 
 ## 广义线性模型变量筛选
@@ -60,3 +59,30 @@ Species_was_pathway <- spearman_feature_selection(harmonized,"HBA1C",Species_lis
 ### Output
 ![Image text](https://github.com/Bingqiye/Tool-box/blob/main/Screenshots/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230723112730.png)
 
+---
+
+## Wilcoxon差异筛选
+
+### Description
+Select features with different levels on two groups (Case/Control)
+
+### Usage
+```R
+wilcoxon_feature_selection(dataframe,group,features)
+```
+
+### Arguments
+- **dataframe**: Dataframe with sample IDs as rownames, with feature names as colnames.
+- **group**: The name of group, such as "Diabetes".
+- **features**: The name of features, such as "Species1","Species2" or c("Species1","Species2").
+
+### Examples
+```R
+source("Wilcoxon差异筛选.R")
+
+Species_list <- c("Species1","Species2"......)
+
+Diabetes_was_metabolites <- wilcoxon_feature_selection(harmonized,"Diabetes",Species_list)
+```
+### Output
+![Image text](https://github.com/Bingqiye/Tool-box/blob/main/Screenshots/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230723154149.png)
