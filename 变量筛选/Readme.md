@@ -47,7 +47,7 @@ spearman_feature_selection(dataframe, outcome, exposure)
 ### Arguments
 - **dataframe**: Dataframe with sample IDs as rownames, with feature names as colnames.
 - **outcome**: The name of outcome feature, such as "Outcome".
-- **exposure**: The name of exposure feature, such as "Species1","Species2" or c("gene1","gene2").
+- **exposure**: The name of exposure feature, such as "Species1","Species2" or c("Species1","Species2").
 
 ### Examples
 ```R
